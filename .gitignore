@@ -1,0 +1,14 @@
+# Application
+/vendor/*
+/tmp/*
+/logs/*
+node_modules/
+.sass-cache/
+webroot/coverage/
+webroot/files/
+config/Migrations/schema-dump-default.lock
+composer.lock
+
+# Mac
+.idea/
+.DS_Store
