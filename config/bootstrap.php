@@ -68,6 +68,8 @@ use Cake\Utility\Security;
  * Read configuration file and inject configuration into various
  * CakePHP classes.
  *
+ * @todo change environment if (expr).
+ *
  * By default there is only one configuration file. It is often a good
  * idea to create multiple configuration files, and separate the configuration
  * that changes from configuration that does not. This makes deployment simpler.
@@ -75,6 +77,11 @@ use Cake\Utility\Security;
 try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);
+    if ( preg_match('/var\/www/', dirname(__FILE__)) != 1 ) {
+        Configure::load( 'environments/development', 'default' );
+    } else {
+        Configure::load('environments/production', 'default');
+    }
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
