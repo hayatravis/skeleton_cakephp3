@@ -13,8 +13,21 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "css-loader": "^0.27.3",
+    "del": "^2.2.2",
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "file-loader": "^0.10.1",
+    "font-awesome": "^4.7.0",
     "fontawesome": "^4.7.2",
-    "jquery": "^3.2.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.2",
+    "jquery": "^3.2.1",
+    "page": "^1.7.1",
+    "style-loader": "^0.16.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.2"
   }
 }

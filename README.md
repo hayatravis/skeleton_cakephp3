@@ -26,6 +26,7 @@ npm install
 - eonasdan-bootstrap-datetimepicker
 - jquery
 - fontawesome
+- page.js(javascript router)
 
 ## run
 ```bash

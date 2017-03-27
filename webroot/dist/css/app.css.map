@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA,KACI,iBAAkB,AAClB,UAAY,CACf","file":"app.css","sourcesContent":["body {\n    padding-top: 70px;\n    color: cyan;\n}"]}
