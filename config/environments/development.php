@@ -188,7 +188,7 @@ return [
      * To use database sessions, load the SQL file located at config/Schema/sessions.sql
      */
     'Session' => [
-        'cookie' => 'office',
+        'cookie' => 'app',
         'defaults' => 'php',
         'timeout' => 60 * 3, // 3時間
         'ini' => [
@@ -203,14 +203,14 @@ return [
     'Cache' => [
         'long' => [
             'className' => 'Redis',
-            'prefix'    => 'development_office_',
+            'prefix'    => 'development_app_',
             'duration'  => '+1 week',
             'server'    => 'localhost',
             'port'      => '6379',
         ],
         'short' => [
             'className' => 'Redis',
-            'prefix'    => 'development_office_',
+            'prefix'    => 'development_app_',
             'duration'  => '+1 hours',
             'server'    => 'localhost',
             'port'      => '6379',
