@@ -8,8 +8,7 @@ var sass = require('gulp-ruby-sass');
 var paths = {
 	base: "./webroot/js/app.js",
 	scripts: "./webroot/js/**/*.js",
-	css: "./webroot/css/**/*.css",
-	admin_css: "./webroot/admin_css/**/*.css"
+	css: "./webroot/css/**/*.css"
 };
 
 gulp.task('clean', function() {
@@ -28,10 +27,8 @@ gulp.task('css', function() {
 });
 
 gulp.task('sass', function () {
-	return sass('./public/sass/**/*.scss', {
-		style : 'expanded'
-	})
-		.pipe(sourcemaps.init( { loadMaps: true }))
+	return sass('./webroot/sass/**/*.scss', { style : 'expanded'} )
+		.pipe(sourcemaps.init( { loadMaps: true } ))
 		.pipe(concat('app.css'))
 		.pipe(sourcemaps.write("./"))
 		.pipe(gulp.dest('webroot/dist/css'));

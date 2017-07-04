@@ -6,7 +6,6 @@ var paths = {
     css: basePass + '/css',
     dist: basePass + '/dist'
 };
-console.log(__dirname);
 module.exports = {
     context: __dirname + '/webroot',
     entry: {
